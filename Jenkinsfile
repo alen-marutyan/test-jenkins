@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('Checkout Code') {
           steps {
-            git(url: 'https://github.com/alen-marutyan/test-jenkins', branch: 'dev')
+            git(url: 'https://github.com/alen-marutyan/test-jenkins', branch: 'dev', changelog: true)
           }
         }
 
